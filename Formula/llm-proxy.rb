@@ -16,7 +16,14 @@ class LlmProxy < Formula
   end
 
   def install
-    bin.install "llm-proxy"
+    on_macos do
+      on_arm do
+        bin.install "llm-proxy-darwin-arm64" => "llm-proxy"
+      end
+      on_intel do
+        bin.install "llm-proxy-darwin-amd64" => "llm-proxy"
+      end
+    end
   end
 
   service do
