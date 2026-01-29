@@ -1,17 +1,17 @@
 class LlmProxy < Formula
   desc "Transparent logging proxy for LLM API traffic"
   homepage "https://github.com/prime-radiant-inc/llm-proxy"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/prime-radiant-inc/llm-proxy/releases/download/v#{version}/llm-proxy-darwin-arm64.tar.gz"
-      sha256 "ae08ef1fb100a5d67aa0ebf554849fa2e6eef82f4122609da3fb0b5d63beacc2"
+      sha256 "8e50a89ef1ddaabd09eaa8b046589e5d47d6bfdcdf7610448b1818648bf691d7"
     end
     on_intel do
       url "https://github.com/prime-radiant-inc/llm-proxy/releases/download/v#{version}/llm-proxy-darwin-amd64.tar.gz"
-      sha256 "14e21dd1f588da3eeee6d43c3822163f1341cb1ca6b0c1e06525a0b03a27764a"
+      sha256 "62fddb7b7d2e187aea22682709ba3215cb97ab5c6bdae30797a70710fa176dc1"
     end
   end
 
