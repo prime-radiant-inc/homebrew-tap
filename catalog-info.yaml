@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homebrew-tap
+  description: "Homebrew tap with formulae for Prime Radiant tools (llm-proxy, beeper-message-sync)."
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    prime-radiant.com/repo-map-rev: "7c93f34238912490895c420c44284a33191fb8df"
+  tags: [homebrew, homebrew-tap, ruby]
+spec:
+  type: infra
+  lifecycle: production
+  owner: user:arittr
+  system: plugins
+  dependsOn:
+    - component:llm-proxy
+    - component:beeper-message-sync
