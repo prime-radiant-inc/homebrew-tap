@@ -2,26 +2,26 @@
 class Ledger < Formula
   desc "Durable, git-backed working-state for coding agents"
   homepage "https://github.com/prime-radiant-inc/ledger"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.1.0/ledger-darwin-arm64.tar.gz"
-      sha256 "ed59c75820cf964b7b4f8e943ad90548ecfd02605fdf696a6a59621eac8fea82"
+      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.2.0/ledger-darwin-arm64.tar.gz"
+      sha256 "71d05fa11bb0ce7f9e14b73dda929de3197eefc8351861d3b19374400678fae7"
     else
-      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.1.0/ledger-darwin-amd64.tar.gz"
-      sha256 "f446eca782d4cba5fc3caeff05ec525e35fabdec3357e26cad22b62f1ab70796"
+      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.2.0/ledger-darwin-amd64.tar.gz"
+      sha256 "fb60f3a234e91d50c7d72e7467fef8e934919c9893baa1f7c690cc378488b0f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.1.0/ledger-linux-arm64.tar.gz"
-      sha256 "577e1eb253ffdb93507306178a195cd79fa76ac23d827eb640b6c63312b6ab7e"
+      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.2.0/ledger-linux-arm64.tar.gz"
+      sha256 "5ae6845b1561ace969eb7a37acc56bf5dbea1bb19e6e926451835dcf01ff605f"
     else
-      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.1.0/ledger-linux-amd64.tar.gz"
-      sha256 "43aa8553dc270b12fd2cc9cf80992397e7cea05e4bbfe3d1be2612bc99255158"
+      url "https://github.com/prime-radiant-inc/ledger/releases/download/v0.2.0/ledger-linux-amd64.tar.gz"
+      sha256 "696fbe796509a4d7d1cdba4491bdffe9a366cb6538dbde07297bd129355d74d3"
     end
   end
 
